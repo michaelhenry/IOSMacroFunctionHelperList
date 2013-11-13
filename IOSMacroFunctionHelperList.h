@@ -17,3 +17,15 @@
 #define isSystemGreaterThanEqual(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 #define isiPhone5  ([[UIScreen mainScreen] bounds].size.height == 568)?TRUE:FALSE
+
+// For Application Information
+#define AppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+
+#define AppName  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+
+#define SystemVersion [[UIDevice currentDevice] systemVersion]
+
+#define AppBundleIdentifier [[NSBundle mainBundle] bundleIdentifier]
+
+
+
