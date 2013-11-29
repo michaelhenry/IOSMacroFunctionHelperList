@@ -19,7 +19,7 @@
 #define isiPhone5  ([[UIScreen mainScreen] bounds].size.height == 568)?TRUE:FALSE
 
 // For Application Information
-#define AppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define AppVersion  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 #define AppName  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 
